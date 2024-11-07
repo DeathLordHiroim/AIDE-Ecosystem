@@ -1,0 +1,47 @@
+.testimonialCard {
+  @apply bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg;
+}
+
+.quote {
+  @apply text-gray-300 italic mb-4;
+}
+
+.author {
+  @apply flex items-center;
+}
+
+.name {
+  @apply text-lg font-semibold text-gray-200;
+}
+
+.role {
+  @apply text-sm text-gray-400;
+}
+
+.stars {
+  @apply flex text-yellow-400 ml-4;
+}
+
+.desktopSection {
+  @apply py-20;
+}
+
+.desktopTitle {
+  @apply text-4xl font-bold text-center mb-12 text-blue-400;
+}
+
+.desktopGrid {
+  @apply grid grid-cols-3 gap-8;
+}
+
+.mobileSection {
+  @apply py-12;
+}
+
+.mobileTitle {
+  @apply text-3xl font-bold text-center mb-8 text-blue-400;
+}
+
+.mobileList {
+  @apply space-y-6;
+} 

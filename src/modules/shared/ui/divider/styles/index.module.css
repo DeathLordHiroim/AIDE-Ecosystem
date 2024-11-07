@@ -1,0 +1,3 @@
+.divider {
+  @apply w-full h-px border-t border-dotted border-gray-700 border-opacity-30 my-8;
+} 

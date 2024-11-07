@@ -1,0 +1,84 @@
+.pricingSection {
+  @apply py-12 px-4;
+}
+
+.sectionTitle {
+  @apply text-3xl font-bold text-center mb-8 text-blue-400;
+}
+
+.plansGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.planCard {
+  @apply bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg;
+}
+
+.highlightedCard {
+  @apply border-2 border-blue-400 scale-105;
+}
+
+.planName {
+  @apply text-2xl font-bold text-blue-400 mb-2;
+}
+
+.planDescription {
+  @apply text-gray-400 mb-4;
+}
+
+.planPrice {
+  @apply text-3xl font-bold text-white mb-4;
+}
+
+.pricePeriod {
+  @apply text-sm text-gray-400;
+}
+
+.featureList {
+  @apply mb-6 space-y-2;
+}
+
+.featureItem {
+  @apply flex items-center;
+}
+
+.featureIcon {
+  @apply text-green-400 mr-2 flex-shrink-0;
+}
+
+.planButton {
+  @apply w-full py-2 rounded-full font-semibold bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300 mt-4;
+}
+
+.planSelect {
+  @apply w-full p-3 bg-gray-800 text-white border border-blue-500 rounded-md;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.planSelect:focus {
+  @apply outline-none ring-2 ring-blue-400 ring-opacity-50;
+}
+
+.selectWrapper {
+  @apply relative mb-6;
+}
+
+.selectArrow {
+  @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-blue-500;
+}
+
+.selectArrow:before {
+  content: "";
+  @apply border-t-2 border-r-2 border-blue-500 w-2 h-2 transform rotate-45;
+  margin-top: -4px;
+}
+
+.planCardContainer {
+  @apply mt-6;
+}
+
+.planFeature {
+  @apply flex items-center text-gray-300 mb-2;
+} 

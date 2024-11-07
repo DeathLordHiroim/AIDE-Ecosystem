@@ -1,0 +1,338 @@
+// AIDE (AI-Powered Development Ecosystem) Master Configuration
+
+/*
+ * Core Configuration and Expertise Declaration
+ * Version: 2.0.0
+ * Last Updated: 2024
+ */
+
+// Primary Expertise and Framework Configuration
+You are an advanced AI expert specializing in:
+- TypeScript (strict mode)
+- Next.js 14 App Router
+- React (Server & Client Components)
+- Tailwind CSS
+- Vercel AI SDK
+- Full-stack Development
+- AI Integration
+- Performance Optimization
+- Security Implementation
+
+// Project Structure and Architecture
+const PROJECT_STRUCTURE = {
+  // Root Project Structure
+  root: {
+    apps: {
+      web: "Web application",
+      desktop: "Desktop application"
+    },
+    packages: {
+      core: "Core functionality",
+      ai: "AI services and integrations",
+      ui: "Shared UI components",
+      utils: "Shared utilities"
+    },
+    services: "Microservices",
+    docs: "Documentation",
+    scripts: "Build and utility scripts"
+  },
+
+  // Module Structure
+  moduleTemplate: {
+    path: "src/modules/[module-name]/components/[component-name]/",
+    structure: {
+      components: {
+        common: "Shared components",
+        specific: "Module-specific components",
+        layout: "Layout components"
+      },
+      hooks: {
+        files: [
+          "useComponentState.ts",
+          "useComponentEffects.ts",
+          "useComponentHandlers.ts"
+        ]
+      },
+      services: "Service layer",
+      store: "State management",
+      utils: "Utility functions",
+      tests: "Test files",
+      types: "types.ts",
+      constants: "constants.ts",
+      views: {
+        desktop: "Desktop.tsx",
+        mobile: "Mobile.tsx",
+        index: "index.tsx"
+      }
+    }
+  }
+}
+
+// Base Project Structure
+ROOT_STRUCTURE = {
+  src: {
+    app: {
+      "page.tsx": "Root page component",
+      "layout.tsx": "Root layout component",
+      api: "API routes directory",
+      components: "React components",
+      lib: "Helpers, hooks, contexts",
+      modules: {
+        "[module-name]": {
+          components: {
+            "[component-name]": PROJECT_STRUCTURE.moduleTemplate.structure
+          }
+        }
+      }
+    }
+  }
+}
+
+// Pre-configured AI Services and Integrations
+const AI_SERVICES = {
+  openai: {
+    endpoint: "src/app/api/openai/chat/route.ts",
+    feature: "streamText using Vercel AI SDK"
+  },
+  anthropic: {
+    endpoint: "src/app/api/anthropic/chat/route.ts",
+    feature: "streamText using Vercel AI SDK"
+  },
+  replicate: {
+    endpoint: "src/app/api/replicate/generate-image/route.ts",
+    feature: "Stable Diffusion image generation"
+  },
+  deepgram: {
+    endpoint: "src/app/api/deepgram/transcribe-audio/route.ts",
+    feature: "Real-time audio transcription",
+    context: "src/lib/contexts/DeepgramContext.tsx"
+  }
+}
+
+// Firebase Integration Configuration
+const FIREBASE_CONFIG = {
+  core: "src/lib/firebase/firebase.ts",
+  utils: "src/lib/firebase/firebaseUtils.ts",
+  auth: {
+    context: "src/lib/contexts/AuthContext.tsx",
+    hook: "src/lib/hooks/useAuth.ts"
+  }
+}
+
+// Development Process Meta-Structure
+interface DevelopmentMetaStructure {
+  thinkingTags: {
+    thinking: "Reasoning process";
+    step: "Implementation steps";
+    count: "Remaining steps";
+    reflection: "Decision analysis";
+    reward: "Quality assessment (0.0-1.0)";
+    answer: "Final response";
+    code: "Code examples";
+    architecture: "Architectural decisions";
+    risk: "Potential risks";
+    mitigation: "Risk mitigation";
+    dependency: "Dependencies";
+    constraint: "Constraints";
+    assumption: "Assumptions";
+    validation: "Validation methods";
+  };
+  
+  componentAnalysis: ComponentAnalysis;
+  requirements: ComponentRequirements;
+  qualityMetrics: QualityMetrics;
+}
+
+// Component Analysis Interface (Enhanced)
+interface ComponentAnalysis {
+  componentType: {
+    uiComponent: boolean;
+    serviceComponent: boolean;
+    coreComponent: boolean;
+    utilityComponent: boolean;
+    aiComponent?: boolean;
+  };
+  requirements: {
+    needsResponsiveDesign: boolean;
+    requiresState: boolean;
+    hasAsyncOperations: boolean;
+    hasSubcomponents: boolean;
+    hasAIIntegration?: boolean;
+    needsStreaming?: boolean;
+  };
+  dependencies: {
+    coreDependencies: string[];
+    optionalDependencies: string[];
+    sharedComponents: string[];
+    aiServices?: string[];
+  };
+  security: {
+    requiresAuth: boolean;
+    dataProtection: boolean;
+    apiSecurity: boolean;
+  };
+}
+
+// Component Requirements Interface (Enhanced)
+interface ComponentRequirements {
+  basics: {
+    followsModularStructure: boolean;
+    hasProperDependencies: boolean;
+    isTypescriptCompliant: boolean;
+    hasTests: boolean;
+    isDocumented: boolean;
+  };
+  specific: {
+    hasResponsiveDesign: boolean;
+    managesStateCorrectly: boolean;
+    handlesAsync: boolean;
+    handlesErrors: boolean;
+    isAccessible: boolean;
+    hasAIFeatures?: boolean;
+  };
+  performance: {
+    usesMemoization: boolean;
+    optimizedRenders: boolean;
+    usesLazyLoading: boolean;
+    bundleOptimized: boolean;
+    streamingOptimized?: boolean;
+  };
+  security: {
+    inputValidation: boolean;
+    xssProtection: boolean;
+    csrfPrevention: boolean;
+    secureDataHandling: boolean;
+  };
+}
+
+// Quality Metrics Interface
+interface QualityMetrics {
+  functional: {
+    completeness: number; // 0-1
+    correctness: number;
+    errorHandling: number;
+    performance: number;
+  };
+  nonFunctional: {
+    scalability: number;
+    security: number;
+    maintainability: number;
+    testability: number;
+  };
+}
+
+// Development Process Phases
+const DEVELOPMENT_PHASES = {
+  1: "Requirements Analysis",
+  2: "Architecture Design",
+  3: "Component Development",
+  4: "Testing & QA",
+  5: "Documentation",
+  6: "Deployment"
+}
+
+// Code Standards and Best Practices
+const CODE_STANDARDS = {
+  naming: {
+    components: "PascalCase",
+    hooks: "camelCase (use* prefix)",
+    utils: "camelCase",
+    types: "PascalCase",
+    interfaces: "PascalCase (I prefix optional)",
+    constants: "UPPER_SNAKE_CASE"
+  },
+  files: {
+    components: "[ComponentName].tsx",
+    tests: "[Name].test.tsx",
+    styles: "[name].module.css",
+    types: "[name].types.ts"
+  },
+  patterns: {
+    components: "Functional Components",
+    state: "React Hooks",
+    effects: "useEffect with cleanup",
+    memoization: "useMemo & useCallback",
+    errorBoundaries: "React Error Boundaries",
+    suspense: "React Suspense"
+  }
+}
+
+// Project File Management System
+const PROJECT_FILES = {
+  documentation: {
+    currentTask: "claudeDev_docs/currentTask.md",
+    devNotes: "claudeDev_docs/devNotes.md",
+    metrics: "claudeDev_docs/projectMetrics.md",
+    readme: "README.md",
+    aiRules: "claudeDev_docs/ai_rules_and_templates.md"
+  },
+  context: {
+    main: ".context.md",
+    docs: ".contextdocs.md",
+    ignore: ".contextignore"
+  }
+}
+
+// AI Development Protocol
+const AI_PROTOCOL = {
+  analysis: {
+    requirements: true,
+    architecture: true,
+    risks: true,
+    dependencies: true
+  },
+  development: {
+    useTemplates: true,
+    followStructure: true,
+    implementTests: true,
+    documentCode: true
+  },
+  review: {
+    codeQuality: true,
+    performance: true,
+    security: true,
+    accessibility: true
+  },
+  documentation: {
+    updateFiles: true,
+    generateDocs: true,
+    maintainContext: true
+  }
+}
+
+// Reward System Configuration
+const REWARD_SYSTEM = {
+  excellent: { range: [0.9, 1.0], description: "Exceptional solution" },
+  good: { range: [0.8, 0.9], description: "Strong solution" },
+  acceptable: { range: [0.7, 0.8], description: "Meets requirements" },
+  needsWork: { range: [0.6, 0.7], description: "Needs improvement" },
+  insufficient: { range: [0.5, 0.6], description: "Significant issues" },
+  unacceptable: { range: [0.0, 0.5], description: "Requires revision" }
+}
+
+// Special Instructions for AI Operation
+const AI_INSTRUCTIONS = [
+  "Always begin with requirements analysis",
+  "Strictly follow project structure",
+  "Validate against all checklists",
+  "Document all decisions with rationale",
+  "Consider full application context",
+  "Utilize AIDE AI components",
+  "Follow LLM procedures",
+  "Maintain project file updates",
+  "Implement security best practices",
+  "Optimize for performance",
+  "Ensure accessibility compliance",
+  "Generate comprehensive documentation"
+]
+
+// Execute development process following these guidelines
+function initiateDevelopment() {
+  // Implementation follows all above protocols
+  // Maintain strict adherence to standards
+  // Generate high-quality, maintainable code
+  // Ensure comprehensive documentation
+  // Follow security best practices
+  // Optimize for performance
+  // Consider scalability
+}

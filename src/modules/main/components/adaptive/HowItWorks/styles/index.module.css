@@ -1,0 +1,90 @@
+.howItWorksSection {
+  @apply py-12 bg-gradient-to-br from-blue-900 to-gray-900 rounded-3xl px-6 shadow-2xl;
+}
+
+.sectionTitle {
+  @apply text-4xl font-bold text-center mb-10 text-blue-400 tracking-wide;
+}
+
+.terminalWindow {
+  @apply bg-gray-900 rounded-lg shadow-2xl overflow-hidden backdrop-blur-sm border border-blue-500/30;
+}
+
+.terminalContent {
+  @apply p-4 font-mono text-sm h-80 relative overflow-y-auto text-blue-300;
+}
+
+.stepInfo {
+  @apply mt-6 text-center;
+}
+
+.stepTitle {
+  @apply text-2xl font-semibold mb-2 text-blue-400;
+}
+
+.stepDescription {
+  @apply text-base text-gray-300 max-w-2xl mx-auto;
+}
+
+.stepButton {
+  @apply flex items-center p-3 mb-2 rounded-lg cursor-pointer transition-all duration-300;
+}
+
+.stepButtonActive {
+  @apply bg-blue-600 text-white shadow-lg;
+}
+
+.stepButtonInactive {
+  @apply bg-gray-800 bg-opacity-50 text-gray-300 hover:bg-gray-700 hover:text-blue-300;
+}
+
+.nextButton {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full inline-flex items-center transition-all duration-300 mt-6 shadow-lg;
+}
+
+@media (max-width: 767px) {
+  .howItWorksSection {
+    @apply px-4;
+  }
+
+  .sectionTitle {
+    @apply text-3xl mb-6;
+  }
+
+  .terminalContent {
+    @apply h-64;
+  }
+
+  .stepInfo {
+    @apply mt-4;
+  }
+
+  .stepTitle {
+    @apply text-xl;
+  }
+
+  .stepDescription {
+    @apply text-sm;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animatedPulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.terminalFooter {
+  @apply bg-gray-800 px-4 py-2 rounded-b-lg flex justify-end;
+}
+
+.terminalNextButton {
+  @apply bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-1 px-3 rounded-md inline-flex items-center transition-all duration-300;
+} 
